@@ -69,6 +69,7 @@ class App extends React.Component {
   render() {
 
     const {status} = this.state;
+    
     return (
       <div>
         <h1>Protect your eyes</h1>
@@ -84,7 +85,7 @@ class App extends React.Component {
         {(status !== 'off') && <div className="timer">
           {this.formatTime(this.state.time)}
         </div>}
-        
+
         {(status === 'off') && <button className="btn" onClick={() => this.startTimer()}>Start</button>}
         {(status !== 'off') && <button className="btn" onClick={() => this.stopTimer()}>Stop</button>}
         <button className="btn btn-close" onClick={() => this.closeApp()}>X</button>

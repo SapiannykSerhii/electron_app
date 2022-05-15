@@ -9,10 +9,10 @@ function main() {
   let mainWindow = new BrowserWindow({
     webPreferences: {
       nodeIntegration: true,
-      frame: false
     },
     width: 520,
     height: 650,
+    frame: false
   })
 
   // load app/index.html as the window content
